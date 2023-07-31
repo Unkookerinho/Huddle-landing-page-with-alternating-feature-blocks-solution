@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    
+    h1, h2, h3 {
+        font-weight: $fw-open-sans-bold;
+        color: $clr-dark-cyan;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1.05rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width:1024px) {
+    html {
+        font-size: 18px;
+    }
+    body{
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}

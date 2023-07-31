@@ -1,0 +1,146 @@
+.hero {
+    padding: 4rem 2.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    background-color: $clr-very-pale-cyan;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        gap: 2rem;
+
+        p {
+            color: $clr-dark-cyan;
+        }
+    }
+}
+
+
+.cards {
+    padding: 4rem 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.card {
+    padding: 3rem;
+    padding-top: 4.5rem;
+
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 0px rgb(207, 207, 207);
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    p {
+        color: $clr-grayish-blue;
+        font-size: 0.85rem;
+        font-weight: $fw-open-sans-light;
+        line-height: 1.4rem;
+    }
+}
+
+.get-started-wrapper {
+    padding: 4rem 1rem;
+}
+
+.get-started {
+    padding: 2.75rem 2rem;
+    margin-bottom: -8.5rem;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+    background-color: white;
+    border-radius: 10px;
+}
+
+.get-started::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+
+    z-index: -1;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 0px rgb(207, 207, 207);
+}
+
+@media(min-width:1024px) {
+    .hero {
+        padding: 5rem;
+        flex-direction: row;
+
+        .text {
+            justify-content: center;
+            align-items: start;
+            text-align: start;
+            width: 70%;
+        }
+    }
+    
+    .cards {
+        padding: 4rem 5rem;
+    }
+    .card {
+        flex-direction: row-reverse;
+        align-items: stretch;
+        padding: 5rem;
+
+        .image {   
+            flex: 1;
+        }
+
+        .text {
+            flex: 1;
+            padding: 2rem;
+            justify-content: center;
+            align-items: start;
+            text-align: start;
+        }
+    }
+    .card:nth-child(2) {
+        flex-direction: row;
+    }
+    .get-started {
+        width: 40rem;
+        height: 14rem;
+    }
+    .get-started::before {
+        height: 70%;
+    }
+}

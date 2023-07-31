@@ -1,0 +1,53 @@
+button {
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav button {
+    padding: 0.2rem 1.2rem;
+
+    background-color: white;
+    color: $clr-dark-cyan;
+    box-shadow: 0px 4px 10px 0px rgb(228, 232, 233);
+
+    font-size: 0.75rem;
+    font-weight: $fw-poppins-bold;
+
+    &:hover {
+        color: $clr-grayish-blue;
+    }
+}
+
+section button {
+    padding: 0.7rem 4rem;
+
+    background-color: $clr_pink;
+    color: white;
+    box-shadow: 4px 3px 5px 0px rgb(243, 218, 233);
+
+    font-size: 0.75rem;
+    font-weight: $fw-poppins-regular;
+
+    &:hover {
+        background-color: #FF9BDB;
+    }
+}
+
+@media(min-width:1024px) {
+    nav button {
+        padding: 0.75rem 3rem;
+    }
+    section button {
+        padding: 0.8rem 5rem;
+    }
+    .get-started button {
+        padding: 1rem 6rem;
+        font-size: 0.9rem;
+    }
+}
