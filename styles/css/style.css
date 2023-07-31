@@ -349,7 +349,7 @@ nav img {
     height: 70%;
   }
 }
-.footer {
+.footer-flex {
   padding: 9rem 1rem 2.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,14 +366,14 @@ nav img {
   color: white;
   font-weight: 300;
 }
-.footer .contact,
-.footer .about,
-.footer .social {
+.footer-flex .contact,
+.footer-flex .about,
+.footer-flex .social {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-.footer .contact ul {
+.footer-flex .contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,10 +383,10 @@ nav img {
           flex-direction: column;
   gap: 2rem;
 }
-.footer .contact ul .logo {
+.footer-flex .contact ul .logo {
   width: 10rem;
 }
-.footer .contact ul li {
+.footer-flex .contact ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,17 +395,17 @@ nav img {
           align-items: center;
   gap: 1.5rem;
 }
-.footer .contact ul li img {
+.footer-flex .contact ul li img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-.footer .contact ul li img:first-of-type {
+.footer-flex .contact ul li img:first-of-type {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 0.3rem;
 }
-.footer .about div {
+.footer-flex .about div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +415,7 @@ nav img {
           flex-direction: column;
   gap: 1rem;
 }
-.footer .about ul {
+.footer-flex .about ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +426,7 @@ nav img {
   gap: 1rem;
   font-size: 1.1rem;
 }
-.footer .about ul li {
+.footer-flex .about ul li {
   cursor: pointer;
   position: relative;
   width: -webkit-fit-content;
@@ -434,7 +434,7 @@ nav img {
   width: fit-content;
   padding-right: 10px;
 }
-.footer .about ul li:after {
+.footer-flex .about ul li:after {
   content: "";
   position: absolute;
   left: 0;
@@ -445,10 +445,10 @@ nav img {
   -webkit-transition: width 0.2s;
   transition: width 0.2s;
 }
-.footer .about ul li:hover:after {
+.footer-flex .about ul li:hover:after {
   width: 100%;
 }
-.footer .social {
+.footer-flex .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,13 +461,13 @@ nav img {
           align-items: center;
   gap: 1rem;
 }
-.footer .social ul {
+.footer-flex .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
-.footer .social ul li {
+.footer-flex .social ul li {
   cursor: pointer;
   width: 32.41px;
   padding: 0.5rem;
@@ -486,33 +486,33 @@ nav img {
   -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
 }
-.footer .social ul li i {
+.footer-flex .social ul li i {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.footer .social ul li:hover {
+.footer-flex .social ul li:hover {
   border-color: hsl(322, 100%, 66%);
 }
-.footer .social ul li:hover i {
+.footer-flex .social ul li:hover i {
   color: hsl(322, 100%, 66%);
 }
-.footer .social span {
+.footer-flex .social span {
   font-size: 0.75rem;
 }
 
 @media (min-width: 1024px) {
-  .footer {
+  .footer-flex {
     padding: 9rem 8rem 4rem 8rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .footer .about,
-  .footer .social {
+  .footer-flex .about,
+  .footer-flex .social {
     margin-top: 62.8px;
   }
-  .footer .about ul {
+  .footer-flex .about ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -524,15 +524,15 @@ nav img {
         flex-wrap: wrap;
     height: 7rem;
   }
-  .footer .social {
+  .footer-flex .social {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .footer .social ul {
+  .footer-flex .social ul {
     margin-left: -7rem;
   }
-  .footer .social ul li {
+  .footer-flex .social ul li {
     width: 36.2px;
   }
 }
