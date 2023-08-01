@@ -1,0 +1,12 @@
+header {
+    background: url(/images/bg-hero-mobile.svg) no-repeat;
+    background-size: cover;
+    background-color: $clr-very-pale-cyan;
+}
+
+@media(min-width:1024px) {
+    header {
+        background: url(/images/bg-hero-desktop.svg) no-repeat;
+        background-size: cover;
+    }
+}

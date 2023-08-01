@@ -133,7 +133,6 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem 2rem;
-  background-color: hsl(193, 100%, 96%);
 }
 nav img {
   cursor: pointer;
@@ -160,7 +159,6 @@ nav img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3.5rem;
-  background-color: hsl(193, 100%, 96%);
 }
 .hero .text {
   display: -webkit-box;
@@ -534,5 +532,17 @@ nav img {
   }
   .footer-flex .social ul li {
     width: 36.2px;
+  }
+}
+header {
+  background: url(/images/bg-hero-mobile.svg) no-repeat;
+  background-size: cover;
+  background-color: hsl(193, 100%, 96%);
+}
+
+@media (min-width: 1024px) {
+  header {
+    background: url(/images/bg-hero-desktop.svg) no-repeat;
+    background-size: cover;
   }
 }
